@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-with open("README.md",'r') as f:
+with open("README.md",'r',encoding="utf8") as f:
     long_description=f.read()
 
 setup(
@@ -26,7 +26,8 @@ setup(
         "fire==0.4.0",
         "six==1.16.0",
         "termcolor==1.1.0",
-        "pytest==7.1.2"
+        "pytest==7.1.2",
+        "allure-pytest==2.9.45"
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
